@@ -1,0 +1,66 @@
+---
+title: "Tailors SQC"
+author: "Tailors Co."
+date: "1/12/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Statistical Quality Control
+
+Statistical Quality Control includes both (1) the application of statistical sampling theory that deals with quality assurance and (2) the use of statistical techniques to monitor and control a process. The former includes acceptance sampling procedures for inspecting incoming parts or raw materials, and the latter (often referred to as statistical process control or SPC) employs the use of control charts, continuous improvement tools, and the design of experiments for early detection and prevention of problems, rather than correction of problems that have already occurred.
+
+## Historia QC
+
+At Western Electric, an Inspection Engineering Department was formed, which later became the Quality Assurance Department of the Bell Telephone Laboratories. In 1924, Walter Shewhart, a physicist and self-made statistician, was assigned to examine and interpret inspection data from the Western Electric Company Hawthorn Works. It was apparent to him that little useful inference to the future could be drawn from the records of past inspection data, but he realized that something serious should be done, and he conceived the idea of statistical control. It was based on the premise that no action can be repeated exactly. Therefore, all manufactured product is subject to a certain amount of variation that can be attributed to a system of chance causes. Stable variation within this system is inevitable. However, the reasons for special cause variation outside this stable pattern can (and should) be recognized and eliminated.
+
+The control chart he perceived was founded on sampling during production rather than waiting until the end of the production run. Action limits were calculated from the chance cause variation in the sample data, and the process could be immediately stopped and adjusted when additional samples fell outside the action limits. In that way, production output could be expected to stay within defined limits.
+
+Hasta 1983, los teléfonos Western Electric eran arrendados por los suscriptores, y nunca vendidos, por esto, debían ser reparados sin cargo en caso de que fallaran. Esto produjo que los teléfonos Western Electric fueran muy duraderos y confiables. De hecho, el trabajo de Walter A. Shewhart, quien desarrolló nuevos procesos de control de calidad en los Años 20, ayudó a que la calidad de los teléfonos de la Western Electric fuera legendaria. En 1983, los teléfonos Western Electric empezaron a ser vendidos a los suscriptores mediante la recién creada American Bell, subsidiaria de AT&T. 
+
+Harold F. Dodge joined Western Electric Corporation shortly after Shewhart did. He wondered, “how many samples were necessary when inspecting a lot of materials”, and began developing sampling inspection tables. When he was joined by Harry G. Romig, together they developed double sampling plans to reduce the average sample size required, and by 1927 they had developed tables for rectification inspection indexed by the lot tolerance and AOQL (average outgoing quality level). Rectification sampling required removal of defective items through 100% inspection of lots in which the number defective in the sample was too high. Dodge and Romig’s sampling tables were published in the Bell System Technical Journal in 1941(Dodge and Romig 1941).
+
+### Segunda Guerra 
+
+The initial reluctance to adopt statistical quality control in the United States was quickly overcome at the beginning of World War II. Manufacturing firms switched from the production of consumer goods to defense equipment. With the buildup of military personnel and material, the armed services became large consumers of American goods, and they had a large influence on quality standards.
+
+The military had impact on the adoption of statistical quality control methods by industry in two different ways. The first was the fact that the armed services themselves adopted statistically derived sampling and inspection methods in their procurement efforts. The second was the establishment of a widespread educational program for industrial personnel at the request of the War Department.
+
+The Ordnance Sampling Inspection Tables employed a sampling scheme based on an acceptable quality level (AQL). The scheme assumed that there would be a continuing stream of lots submitted by a supplier. If the supplier’s quality level was worse than the AQL, the scheme would automatically switch to tightened inspection and the supplier would be forced to bear the cost of a high proportion of lots rejected and returned. This scheme encouraged suppliers to improve quality.
+
+As a result of all the training and literature, statistical quality control techniques were widely used during the war years. They were instrumental in ensuring the quality and cost effectiveness of manufactured goods as the nations factories made the great turnaround from civilian to military production. For example, **military aircraft production totaled 6000 in 1940 and jumped to 85,000 in 1943**. Joseph Stalin stated that without the American production, the Allies could never have won the war.
+
+## SQC in post-war Japan
+
+U.S. occupation forces were in Japan trying to help rebuild their shattered economy. At the request of General Douglas McArthur, W. E. Deming was summoned to help in planning the 1951 Japan Census. Deming’s expertise in quality control techniques and his compassion for the plight of the Japanese citizens brought him an invitation by the Japanese Society of Scientists and Engineers (JUSE) to speak with them about SPC. At that time, what was left of Japanese manufacturing was almost worse than nothing at all. The label Made in Japan was synonymous with cheap junk in worldwide markets.
+
+
+Therefore, when Deming was invited by JUSE to speak with them about SPC, he agreed to do so only if he could first talk directly to top management of companies. In meetings with executives in 1950, his main message was his Points for Management2 and the following simple principle: 
+* (1) Improve Quality ⇒ (2) Less Rework and Waste ⇒ (3) Productivity Improves ⇒ (4) Capture the Market with Lower Price and Better Quality ⇒ (5) Stay in Business ⇒ (6) Provide Jobs.
+
+Starting about 1980, top management of large U.S. Companies began to accept quality goals as one of the strategic parameters in business planning along with the traditional marketing and financial goals. For example, Ford Motor Company adopted the slogan “Quality is Job 1”, and they followed the plan of the Defense department in WW II by setting up training programs for their own personnel and for their suppliers. Other companies followed suit, and the quality revolution began in the U.S.
+
+Another change in the application of technical methodologies for quality control and quality improvement is the use of the computer. Prior to 1963, the only tools available to engineers and statisticians for calculations were slide rules or mechanical or electro-mechanical calculators. Sampling inspection tables and Shewhart’s control charts were developed with this fact in mind.
+
+After availability of computers, software began to be developed for statistical calculations and SQC applications. However, much of the training materials and textbooks that have been developed since the 1980 comeback of SQC in U.S. industry still illustrates the techniques that can easily be implemented with hand calculations
+
+### The Red Bead Experiment 
+  * <https://www.youtube.com/watch?v=geiC4UgpDyw>
+  * <https://www.youtube.com/watch?v=ckBfbvOXDvU> [Original con Edwars Deming]
+  * Edward demings 14 points [https://asq.org/quality-resources/total-quality-management/deming-points]
+
+## Attribute Samplin Plans
+
+The quality and reliability of manufactured goods are highly dependent on the quality of component parts. If the quality of component parts is low, the quality and/or reliability of the end assembly will also be low. While some component parts are produced in house, many are procured from outside suppliers; the final quality is, therefore, highly dependent on suppliers.
+
+A lot or Batch is defined as “a definite quantity of a product or material accumulated under conditions that are considered uniform for sampling purposes” (ASQ-Statistics 1996).
+
+The only way that a company can be sure that every item in an incoming lot of components from a supplier, or every one of their own records or results of administrative work completed, meets the accepted standard is through 100% inspection of every item in the lot. However, this may require more effort than necessary, and if the inspection is destructive or damaging, this approach cannot be used.
+
+
+Acepatnce Sampling Package
+
+https://cran.r-project.org/web/packages/AcceptanceSampling/vignettes/acceptance_sampling_manual.pdf
